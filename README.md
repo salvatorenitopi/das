@@ -8,6 +8,13 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
+
+## Uninstall
+```bash
+chmod +x uninstall.sh
+./uninstall.sh
+```
+
 ## Usage
 ```bash
 usage: das [-h] [-s] [-m] [-n] [-d] [-p] [-x] [-c] [-v] [source] [destination]
