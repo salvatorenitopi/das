@@ -16,7 +16,7 @@ chmod +x uninstall.sh
 ```
 
 ## Usage
-```bash
+```text
 usage: das [-h] [-s] [-m] [-n] [-d] [-p] [-x] [-c] [-v] [source] [destination]
 
 positional arguments:
@@ -33,4 +33,20 @@ optional arguments:
   -x, --diff       Show different files between source and destination
   -c, --no-colors  Verbose output
   -v, --verbose    Verbose output (-v: all except skip | -vv: all | -vvv: all+stats)
+```
+
+## Examples
+Copy files from source (path_a) to destination (path_b) that do not exist in destination, print relevant actions.
+```text
+das ~/path_a ~/path_b -v
+```
+
+Simulate copy files from source (path_a) to destination (path_b) that do not exist in destination, print relevant actions.
+```text
+das ~/path_a ~/path_b -vn
+```
+
+Copy files from source (path_a) to destination (path_b) that do not exist in destination, delete from destination files that do not exist in source, print relevant actions.
+```text
+das ~/path_a ~/path_b -vd
 ```
